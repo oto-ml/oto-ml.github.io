@@ -1,0 +1,99 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    height: 100%;
+    color: var(--font-color);
+  }
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+  }
+
+  #logo {
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "Proza Libre", sans-serif;
+    margin: 0;
+    margin-bottom: var(--spacing-2);
+  }
+
+  .navigation {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+      margin-left: 0px;
+    margin-left: auto;
+  }
+
+  .navigation-item {
+    margin: var(--spacing-1);
+  }
+
+  section {
+    /**
+     * Sets the padding of an element.
+     * 
+     * The padding property sets the padding area on all four sides of an element.
+     * It can have one or two values, where the first value represents the top and bottom padding,
+     * and the second value represents the left and right padding.
+     * 
+     * @param {var} --spacing-3 - The variable representing the spacing value for the padding.
+     * @return {padding} - The padding property with the specified spacing value.
+     */
+    padding: var(--spacing-3) 0;
+  }
+
+
+  #skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .fa-html5::before {
+    content: "\f13b";
+  }
+
+  .fa-css3-alt::before {
+    content: "\f38b";
+  }
+
+  .fa-js::before {
+    content: "\f3b8";
+  }
+
+  .fa-react::before {
+    content: "\f41b";
+  }
+
+  .fa-github::before {
+    content: "\f09b";
+  }
+
+  .fa-git::before {
+    content: "\f1d3";
+  }
+
+  footer {
+    margin-top: auto;
+    padding: var(--spacing-2) 0;
+    text-align: center;
+  }
+
+  
+
