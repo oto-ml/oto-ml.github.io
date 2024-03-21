@@ -1,99 +1,137 @@
-body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0 var(--spacing-3);
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
 
-  body {
-    height: 100%;
-    color: var(--font-color);
-  }
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  color: var(--font-color);
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #323232;
+}
+
+.heart {
+  color: red;
+}
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
 nav {
-    display: flex;
-    align-items: center;
-    padding: var(--spacing-3) 0;
-  }
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-3) 0;
+}
 
-  #logo {
-    margin: 0;
-  }
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
 
-  h2 {
-    font-family: "Proza Libre", sans-serif;
-    margin: 0;
-    margin-bottom: var(--spacing-2);
-  }
+.navigation-item {
+  margin: var(--spacing-1);
+}
 
-  .navigation {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    align-items: center;
-    margin: 0;
-      margin-left: 0px;
-    margin-left: auto;
-  }
+.portrait {
+  width: 300px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
 
-  .navigation-item {
-    margin: var(--spacing-1);
-  }
+.about-me-container {
+  display: flex;
+}
 
-  section {
-    /**
-     * Sets the padding of an element.
-     * 
-     * The padding property sets the padding area on all four sides of an element.
-     * It can have one or two values, where the first value represents the top and bottom padding,
-     * and the second value represents the left and right padding.
-     * 
-     * @param {var} --spacing-3 - The variable representing the spacing value for the padding.
-     * @return {padding} - The padding property with the specified spacing value.
-     */
-    padding: var(--spacing-3) 0;
-  }
+.about-me-text-container {
+  margin-right: var(--spacing-3);
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+details {
+  cursor: pointer;
+}
+
+summary {
+  list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+}
+
+footer {
+  margin-top: auto;
+  padding: var(--spacing-2) 0;
+  text-align: center;
+}
+
+section {
+  padding: var(--spacing-3) 0;
+}
+
+.icon {
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 0 var(--spacing-1);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#logo {
+  margin: 0;
+}
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
 
 
-  #skills-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .fa-html5::before {
-    content: "\f13b";
-  }
-
-  .fa-css3-alt::before {
-    content: "\f38b";
-  }
-
-  .fa-js::before {
-    content: "\f3b8";
-  }
-
-  .fa-react::before {
-    content: "\f41b";
-  }
-
-  .fa-github::before {
-    content: "\f09b";
-  }
-
-  .fa-git::before {
-    content: "\f1d3";
-  }
-
-  footer {
-    margin-top: auto;
-    padding: var(--spacing-2) 0;
-    text-align: center;
-  }
-
-  
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+}
 
