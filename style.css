@@ -1,155 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
 
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * Sets the scroll behavior of the HTML element to smooth.
- */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * This CSS code sets the height of the HTML and body elements to 100% and
- * sets the color of the text to the value of the CSS variable --font-color.
- */
-html, body {
-    height: 100%;
-    color: var(--font-color);
+html,
+body {
+  height: 100%;
+  color: var(--font-color);
 }
 
-
-
-/**
- * Defines the root CSS variables for the page.
- *
- * @root
- * @variable --spacing-1 - The value for the first spacing variable (8px).
- * @variable --spacing-2 - The value for the second spacing variable (12px).
- * @variable --spacing-3 - The value for the third spacing variable (16px).
- * @variable --spacing-4 - The value for the fourth spacing variable (24px).
- * @variable --border-radius - The value for the border radius (12px).
- * @variable --font-color - The value for the font color (#323232).
- */
 :root {
-    --spacing-1: 8px;
-    --spacing-2: 12px;
-    --spacing-3: 16px;
-    --spacing-4: 24px;
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
 
-    --border-radius: 12px;
+  --border-radius: 12px;
 
-    --font-color: #323232;
+  --font-color: #323232;
 }
 
-/*.heart {
+.heart {
   color: red;
-} */
-
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * Styles for the h2 element.
- * 
- * @selector h2
- * @property font-family - The font family for the h2 element.
- * @property margin - The margin for the h2 element.
- * @property margin-bottom - The bottom margin for the h2 element.
- */
-h2 {
-    font-family: "Proza Libre", sans-serif;
-    margin: 0;
-    margin-bottom: var(--spacing-2);
 }
 
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * This CSS file contains styles for the body element.
- */
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+}
 
 body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0 var(--spacing-3);
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * Styles for the navigation element.
- * 
- * @selector nav
- * @description Represents the navigation element.
- * @property display - Specifies the display behavior of the element.
- * @property align-items - Specifies how flex items are aligned along the cross axis.
- * @property padding - Specifies the padding of the element.
- * 
- */
 nav {
   display: flex;
   align-items: center;
   padding: var(--spacing-3) 0;
 }
 
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * CSS styles for the navigation items.
- * 
- * @class navigation-items
- * @description Represents a container for navigation items.
- * @cssprop display - Specifies the display behavior of the container.
- * @cssprop list-style-type - Specifies the type of bullet point for the list items.
- * @cssprop padding - Specifies the padding around the container.
- * @cssprop align-items - Specifies the alignment of the items within the container.
- * @cssprop margin - Specifies the margin around the container.
- * @cssprop margin-left - Specifies the left margin of the container.
- */
-.navigation-items {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    align-items: center;
-    margin: 0;
-    margin-left: auto;
+.navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
 }
 
-.navigation-item {
+.navigation {
   margin: var(--spacing-1);
 }
 
-/**
- * FILEPATH: /c:/Users/3PY37LA_1909/Desktop/MyPage/style.css
- * 
- * CSS class for a portrait element.
- * 
- * @class portrait
- * @description This class sets the width, border radius, and flex-shrink properties for a portrait element.
- * @cssprop width - The width of the portrait element.
- * @cssprop border-radius - The border radius of the portrait element.
- * @cssprop flex-shrink - The flex shrink factor of the portrait element.
- */
 .portrait {
-    width: 300px;
-    border-radius: var(--border-radius);
-    flex-shrink: 0;
+  width: 300px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
 }
 
 .about-me-container {
   display: flex;
 }
 
-.about-me-text-container {
+.aboutme-text {
   margin-right: var(--spacing-3);
 }
 
+.project-image {
+  width: 50%;
+}
 
 .project-title h3 {
   display: inline;
@@ -202,10 +129,8 @@ a {
   margin-top: var(--spacing-1);
 }
 
-
 @media only screen and (max-width: 600px) {
-    .about-me-container {
-        flex-direction: column;
-    }
+  .about-me-container {
+    flex-direction: column;
+  }
 }
-
