@@ -61,12 +61,13 @@ nav {
 }
 
 .portrait {
+  display: flex;
   width: 300px;
   border-radius: var(--border-radius);
   flex-shrink: 0;
 }
 
-.about-me-container {
+.aboutme-container {
   display: flex;
 }
 
