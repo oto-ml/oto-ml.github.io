@@ -47,7 +47,7 @@ nav {
   padding: var(--spacing-3) 0;
 }
 
-.navigation {
+.navigation-items{
   display: flex;
   list-style-type: none;
   padding: 0;
