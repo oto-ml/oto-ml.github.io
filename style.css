@@ -94,7 +94,7 @@ summary {
 footer {
   margin-top: auto;
   padding: var(--spacing-2) 0;
-  text-align: center;
+  text-align: left;
 }
 
 section {
